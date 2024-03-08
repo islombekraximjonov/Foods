@@ -1,0 +1,492 @@
+/* philosopher-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* philosopher-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/philosopher-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    margin: 0 auto;
+    padding: 30px 50px;
+    max-width: 1200px;
+  }
+  .headernav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__headernav{
+    padding-right: 400px;
+  }
+  .nav__link{
+    padding-right: 30px;;
+    color: #150C01;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    opacity: 80%;
+  }
+  .nav__link:hover{
+    color: orange;
+    opacity: 100%;
+  }
+  .headernav__button{
+    width: 155px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #DC780B;
+    color: white;
+    border: 2px transparent;
+    font-size: 16px;
+  }
+  /* ------------------------------------------------------------------header---------------------------------------------------------- */
+  .header__container{
+    display: flex;
+  }
+  .header__box{
+    padding-top: 150px;
+    max-width: 550px;
+  }
+  .header__tittle{
+    color:  #150C01;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+    padding-bottom: 25px;
+  }
+  .header__text{
+    color: #150C01;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    padding-bottom: 35px;
+  }
+  .header__button{
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid  #DC780B;
+    color:  #DC780B;
+  }
+  .header__button:hover{
+    background-color:#DC780B ;
+    color: white;
+  }
+  /* -------------------------------------------------------------------------page-------------------------------------------------------- */
+  .page__name{
+    color: #DC780B;
+   text-align: center;
+   font-family: 'Roboto',sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal; 
+   padding-bottom: 10px;
+   padding-top: 100px;  
+  }
+  .page__tittle{
+    text-align: center;
+    color: #150C01;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+  }
+  .page__box{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  .box__item{
+    text-align: center;
+
+  }
+  .box__tittle{
+    color: #150C01;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 25px;
+  }
+  .box__text{
+    color: #150C01;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 300px;
+    padding-top: 30px;
+  }
+  .page__img:hover{
+    filter: opacity(50%);
+  }
+  /* ---------------------------------------------------------------------hero--------------------------------------------- */
+  .hero__img{
+    border-radius: 20px;
+  }
+  .hero__container{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__name{
+    font-size: 16px;
+    font-family: 'roboto',sans-serif;
+    font-weight: 500;
+    color: #DC780B;
+    padding-bottom: 30px;
+  }
+  .hero__tittle{
+    color: #150C01;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.625px;
+    max-width: 440px;
+    padding-bottom: 30px;
+  }
+  .hero__text{
+    color: #150C01;
+   font-family: 'Roboto',sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   max-width: 450px;
+   padding-bottom: 30px;
+  }
+  .hero__button{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #DC780B;
+    border: 2px solid #DC780B;
+  }
+  .hero__box{
+    padding-top: 80px;
+    padding-left: 60px;
+  }
+  /* ------------------------------------------------------------------menu------------------------------------------------------- */
+  .menu__name{
+    text-align: center;
+    padding-top: 100px;
+    color: #DC780B;
+    font-family: 'robot',sans-serif;
+    font-weight: 500;
+  }
+  .fa {
+    color: gold;
+    padding-left: 10px;
+  }
+
+ 
+  .menu__tittle{
+    text-align: center;
+    color: #150C01;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.625px;
+    max-width: 440px;
+    padding-bottom: 30px;
+    padding-left: 400px;
+    padding-top: 30px;
+
+  }
+  .menu__text{
+    max-width: 700px;
+    text-align: center;
+    padding-left: 200px;
+    padding-bottom: 40px;
+  }
+  .menu__box{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .menubox__item{
+    width: 355px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(243, 241, 241);
+  }
+  .menu__img{
+    border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    padding-bottom: 30px;
+   
+  }
+  .item__tittle{
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .item__text{
+    padding-bottom: 30px;
+    max-width: 250px;
+    padding-left: 20px;
+  }
+  .item__button{
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    margin-left: 20px;
+  }
+  .menu__button{
+    width: 140px;
+    height: 40px;
+    border: 1px solid grey;
+    color: orange;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 450px;
+  }
+  .menu__button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  /* ------------------------------------------------------------------------footer----------------------------------------------------------------- */
+  .footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FBF1E7;
+  }
+  .footer__box{
+    max-width: 500px;
+    padding-left: 100px;
+  }
+  .footer__name{
+    color: #DC780B;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 3.2px;
+    padding-bottom: 20px;
+
+  }
+  .footer__text{
+    color: #150C01;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .footer__img{
+    padding-right: 100px;
+
+  }
+  .footer__button1{
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+  }
+  .footer__button2{
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+
+  }
+  /* =====================================================================main----------------------------------------------------- */
+  .main__container{
+    align-items: center;
+    text-align: center;
+  }
+  .main__box{
+    display: flex;
+    padding-top: 70px;
+    padding-left: 200px;
+  }
+  .main__name{
+    color: #DC780B;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .main__tittle{
+    color: #000;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+  .main__text{
+    max-width: 700px;
+    padding-left: 250px;
+  }
+  .wrapper__image{
+    border-radius: 50%;
+    padding-bottom: 20px;
+  }
+  .wrapper__text{
+    max-width: 500px;
+    padding-bottom: 20px;
+  }
+  .box__image{
+    padding: 80px;
+   
+  }
+  .wrapper__tittle{
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+  /* ------------------------------------------------------------------section--------------------------------------------------- */
+  .section__container{
+    background-color: #eecaa3;
+    text-align: center;
+  }
+  .section__tittle{
+    color: #DC780B;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal
+  }
+  .section__text{
+    color: #150C01;
+   text-align: center;
+   font-family: 'Philosopher',sans-serif;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 700;
+   max-width: 750px;
+   padding-left: 200px;
+   padding-bottom: 40px;
+  }
+  .section__item{
+    list-style: none;
+    display: flex;
+    width: 650px;
+    height: 50px;
+    background-color: white;
+    justify-content: space-between;
+    margin-left: 250px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  p{
+    padding-left: 10px;
+  }
+  .section__button{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 16px;
+  }
+  /* -------------------------------------------------------------navbar--------------------------------------------------- */
+  .navbar__container{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color:  #252525;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .navbar__tittle{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .navbar__text{
+    color: white;
+    font-size: 10px;
+    padding-bottom: 10px;
+  
+  }
+  img{
+    padding-bottom: 10px;
+  }
+
+
+
+
+   
+   
+   
